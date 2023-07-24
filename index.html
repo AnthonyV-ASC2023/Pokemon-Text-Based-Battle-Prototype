@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Battle</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <div id="battle-container">
+    <h2>Wild Pokemon Encounter</h2>
+    <div id="pokemon-info">
+      <div id="player-info">
+        <h3>Your Pokemon</h3>
+        <div>
+          <p>Name: <span id="player-name">Pikachu</span></p>
+          <p>Type: <span id="player-type">Electric</span></p>
+          <p>HP: <span id="player-hp">100</span></p>
+        </div>
+      </div>
+      <div id="enemy-info">
+        <h3>Enemy Pokemon</h3>
+        <div>
+          <p>Name: <span id="enemy-name">Charmander</span></p>
+          <p>Type: <span id="enemy-type">Fire</span></p>
+          <p>HP: <span id="enemy-hp">100</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="battle-log">
+      <p>Battle Log:</p>
+      <ul id="log-list"></ul>
+    </div>
+    <div id="actions">
+      <button  id="attack" onclick="playerAttack()">Attack</button>
+      <button id="switch_pokemon" onclick="switchPokemon()">Switch Pokemon</button>
+      <button id="run_away" onclick="runAway()">Run Away</button>
+    </div>
+  </div>
+</body>
+</html>
